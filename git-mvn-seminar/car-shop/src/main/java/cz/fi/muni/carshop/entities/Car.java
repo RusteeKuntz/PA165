@@ -17,6 +17,7 @@ public class Car {
 		this.type = type;
 		this.constructionYear = constructionYear;
 		this.price = price;
+		if (price < 0) throw new IllegalArgumentException("Negative price on car creation");
 	}
 
 	public Color getColor() {
